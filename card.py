@@ -1,7 +1,7 @@
 import flet as ft
 
 
-def main(page):
+def main(page: ft.Page):
     page.title = 'Cartão'
     page.add(
         ft.Card(
@@ -22,7 +22,7 @@ def main(page):
                         ),
                     ]
                 ),
-                width=400,
+                width=300,
                 padding=10,
             )
         )
