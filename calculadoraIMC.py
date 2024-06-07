@@ -22,9 +22,10 @@ def main(page: ft.Page):
 
     # configuracao do banner de notificacao
     page.banner = ft.Banner(
-        bgcolor=ft.colors.AMBER_100,
+        bgcolor=ft.colors.INDIGO_ACCENT,
         leading=ft.Icon(ft.icons.WARNING_AMBER_ROUNDED,
-                        color=ft.colors.AMBER, size=40),
+                        color=ft.colors.ORANGE,
+                        size=40),
         content=ft.Text('Ops! preencha todos os campos'),
         actions=[ft.TextButton('OK', on_click=close_banner),],
     )
